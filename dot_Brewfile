@@ -1,5 +1,4 @@
 tap "aws/tap"
-tap "benjiwolff/neovim-nightly"
 tap "d12frosted/emacs-plus"
 brew "autossh"
 brew "aws-sso-cli"
