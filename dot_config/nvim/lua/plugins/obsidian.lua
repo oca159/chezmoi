@@ -3,7 +3,7 @@ return {
   version = "*", -- use latest release, remove to use latest commit
   keys = {
     { "<leader>od", ":Obsidian dailies<cr>", desc = "obsidian [d]ailies" },
-    { "<leader>ot", ":e ~/notes/readme.md<cr>", desc = "obsidian [t]odo" },
+    { "<leader>ot", ":Obsidian tags<cr>", desc = "obsidian [t]ags" },
     { "<leader>ob", ":Obsidian backlinks<cr>", desc = "obsidian [b]acklinks" },
     { "<leader>ol", ":Obsidian link<cr>", desc = "obsidian [l]ink selection" },
     { "<leader>of", ":Obsidian follow_link<cr>", desc = "obsidian [f]ollow link" },
@@ -45,6 +45,12 @@ return {
   ---@type obsidian.config
   opts = {
     legacy_commands = false, -- this will be removed in 4.0.0
+    footer = {
+      enabled = false,
+    },
+    ui = {
+      enable = false, -- using render-markdown.nvim instead
+    },
     workspaces = {
       {
         name = "personal",
