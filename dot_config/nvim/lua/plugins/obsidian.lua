@@ -4,7 +4,7 @@ return {
   keys = {
     { "<leader>od", ":Obsidian dailies<cr>", desc = "obsidian [d]ailies" },
     { "<leader>ot", ":Obsidian tags<cr>", desc = "obsidian [t]ags" },
-    { "<leader>ob", ":Obsidian backlinks<cr>", desc = "obsidian [b]acklinks" },
+    { "<leader>oi", ":e ~/vaults/personal/00 Inbox/inbox.md<cr>", desc = "obsidian [i]nbox" },
     { "<leader>ol", ":Obsidian link<cr>", desc = "obsidian [l]ink selection" },
     { "<leader>of", ":Obsidian follow_link<cr>", desc = "obsidian [f]ollow link" },
     {
@@ -61,7 +61,7 @@ return {
       -- Optional, if you keep daily notes in a separate directory.
       folder = "05 Dailies",
       -- Optional, if you want to change the date format for the ID of daily notes.
-      date_format = "%Y-%m-%d",
+      date_format = "%Y-%m-%d %A",
       -- Optional, if you want to change the date format of the default alias of daily notes.
       alias_format = "%B %-d, %Y",
       -- Optional, if you want to automatically insert a template from your template directory like 'daily.md'
